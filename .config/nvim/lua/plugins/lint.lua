@@ -12,6 +12,7 @@ return {
 	config = function()
 		local lint = require("lint")
 		lint.linters_by_ft = {
+			bash = { "shellcheck" },
 			cmake = { "cmakelint" },
 			cpp = { --[["cpplint"]]
 			},

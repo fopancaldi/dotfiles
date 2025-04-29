@@ -8,6 +8,10 @@ return {
 		dependencies = { "williamboman/mason.nvim" },
 		opts = {
 			ensure_installed = {
+				-- bash
+				"bash-language-server",
+				"shellcheck",
+				"beautysh",
 				-- CMake
 				"neocmakelsp",
 				"cmakelint",
@@ -32,7 +36,7 @@ return {
 				-- Markdown
 				"marksman",
 				"prettier",
-				--"alex",
+				"alex",
 			},
 		},
 	},
@@ -50,6 +54,7 @@ return {
 			local lspconfig = require("lspconfig")
 			local ls_capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+			lspconfig.bashls.setup({ capabilities = ls_capabilities })
 			lspconfig.neocmake.setup({ capabilities = ls_capabilities })
 			lspconfig.clangd.setup({
 				capabilities = ls_capabilities,
@@ -58,9 +63,9 @@ return {
 				},
 			})
 			lspconfig.fortls.setup({ capabilities = ls_capabilities })
+			lspconfig.texlab.setup({ capabilities = ls_capabilities })
 			lspconfig.lua_ls.setup({ capabilities = ls_capabilities })
 			lspconfig.marksman.setup({ capabilities = ls_capabilities })
-			lspconfig.texlab.setup({ capabilities = ls_capabilities })
 
 			-- See https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#lua_ls
 			-- It is an alternative way of setting up lua_ls

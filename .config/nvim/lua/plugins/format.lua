@@ -16,6 +16,7 @@ return {
 	},
 	opts = {
 		formatters_by_ft = {
+			bash = { "beautysh" },
 			cmake = { "gersemi" },
 			cpp = { "clang-format" },
 			fortran = { "fprettify" },
