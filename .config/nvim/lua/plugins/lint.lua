@@ -19,6 +19,7 @@ return {
 			latex = { "vale" },
 			lua = { "luacheck" },
 			markdown = { "alex" },
+			yaml = { "yamllint" },
 		}
 
 		vim.api.nvim_create_autocmd({ "BufWritePost" }, {

@@ -1,0 +1,6 @@
+CompileFlags:
+  Add:
+    - -I./src
+    - -I./include
+    - -I../src
+    - -I../include

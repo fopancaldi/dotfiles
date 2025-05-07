@@ -25,6 +25,7 @@ return {
 			},
 			lua = { "stylua" },
 			markdown = { "prettier" },
+			yaml = { "prettier" },
 		},
 		format_on_save = {
 			lsp_fallback = true,
