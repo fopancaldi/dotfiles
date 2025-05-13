@@ -4,7 +4,6 @@ return {
 		opts = {},
 	},
 	{
-		enabled = true,
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 		dependencies = { "williamboman/mason.nvim" },
 		opts = {
