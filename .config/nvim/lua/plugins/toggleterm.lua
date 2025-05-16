@@ -1,10 +1,12 @@
 return {
-	"voldikss/vim-floaterm",
+	"akinsho/toggleterm.nvim",
+	version = "*",
+	opts = {},
 	keys = {
 		{
 			"<leader>tt",
 			function()
-				vim.cmd("FloatermToggle")
+				vim.cmd("ToggleTerm")
 			end,
 			desc = "Toggle floating terminal",
 		},
