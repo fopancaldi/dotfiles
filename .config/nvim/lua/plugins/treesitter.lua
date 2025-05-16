@@ -8,6 +8,7 @@ return {
 				"bash",
 				"bibtex",
 				"cpp",
+				"cuda",
 				"fortran",
 				--"latex",
 				"lua",

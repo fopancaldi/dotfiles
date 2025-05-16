@@ -14,8 +14,8 @@ return {
 		lint.linters_by_ft = {
 			bash = { "shellcheck" },
 			cmake = { "cmakelint" },
-			--[[cpp = { "cpplint"
-			},]]
+			--cpp = { "cpplint" },
+			--TODO: cuda
 			latex = { "vale" },
 			lua = { "luacheck" },
 			markdown = { "alex" },

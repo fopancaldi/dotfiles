@@ -20,6 +20,10 @@ return {
 				"clangd",
 				"cpplint",
 				"clang-format",
+				-- CUDA
+				-- clangd already instaled for C++
+				-- linter ???
+				-- clang-format already installed for C++
 				-- Fortran
 				"fortls",
 				-- No available Fortran linters in mason.nvim!

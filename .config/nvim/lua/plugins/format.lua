@@ -19,9 +19,11 @@ return {
 			bash = { "beautysh" },
 			cmake = { "gersemi" },
 			cpp = { "clang-format" },
+			cuda = { "clang-format" },
 			fortran = { "fprettify" },
 			latex = {
-				"latexindent" --[[, "bibtex-tidy"]],
+				"latexindent",
+				"bibtex-tidy",
 			},
 			lua = { "stylua" },
 			markdown = { "prettier" },
