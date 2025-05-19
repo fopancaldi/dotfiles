@@ -8,7 +8,6 @@ vim.g.maplocalleader = "\\"
 vim.cmd("set mouse=")
 
 -- Cosmetic stuff
-vim.cmd("colorscheme retrobox")
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.linebreak = true

@@ -17,6 +17,7 @@ return {
 				"regex",
 				"vim",
 				"vimdoc",
+				"xml",
 			},
 			highlight = {
 				enable = true,

@@ -41,6 +41,10 @@ return {
 				"marksman",
 				"alex",
 				"prettier",
+				-- TODO: XML
+				--"sonarlint-language-server",
+				"lemminx",
+				"xmlformatter",
 				-- YAML
 				"yaml-language-server",
 				"yamllint",
