@@ -64,7 +64,18 @@ return {
 			lspconfig.clangd.setup({
 				capabilities = ls_capabilities,
 				init_options = {
-					fallbackFlags = { "--std=c++23" },
+					fallbackFlags = {
+						"--std=c++20",
+						"-I./src",
+						"-I../src",
+						"-I../build/_deps/alpaka-src/include",
+						"-I./build/_deps/alpaka-src/include",
+						"-I../build/_deps/doctest-src/doctest",
+						"-I./build/_deps/doctest-src/doctest",
+						"-I../build/_deps/range-v3-src/include",
+						"-I./build/_deps/range-v3-src/include",
+						"-DALPAKA_ACC_CPU_B_SEQ_T_SEQ_ENABLED",
+					},
 				},
 				cmd = { "clangd", "--enable-config" },
 			})

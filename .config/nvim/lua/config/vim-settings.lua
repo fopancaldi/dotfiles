@@ -4,9 +4,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
--- Disable mouse
-vim.cmd("set mouse=")
-
 -- Cosmetic stuff
 vim.opt.number = true
 vim.opt.relativenumber = true

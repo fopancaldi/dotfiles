@@ -6,7 +6,7 @@ return {
 		{
 			"<leader>tt",
 			function()
-				vim.cmd("ToggleTerm")
+				vim.cmd("ToggleTerm direction=float")
 			end,
 			desc = "Toggle floating terminal",
 		},
