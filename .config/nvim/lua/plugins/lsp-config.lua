@@ -75,6 +75,7 @@ return {
 						"-I../build/_deps/range-v3-src/include",
 						"-I./build/_deps/range-v3-src/include",
 						"-DALPAKA_ACC_CPU_B_SEQ_T_SEQ_ENABLED",
+						"-I" .. os.getenv("HOME") .. "/root/include",
 					},
 				},
 				cmd = { "clangd", "--enable-config" },
