@@ -1,1 +1,3 @@
+set font "Agave Nerd Font 10"
+set adjust-open "best-fit"
 set selection-clipboard clipboard
