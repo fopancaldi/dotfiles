@@ -5,28 +5,28 @@ return {
 		dependencies = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
 		keys = {
 			{
-				"<leader>ff",
+				"<leader>tf",
 				function()
 					require("telescope.builtin").find_files()
 				end,
 				desc = "Telescope find files",
 			},
 			{
-				"<leader>fg",
+				"<leader>tg",
 				function()
 					require("telescope.builtin").live_grep()
 				end,
 				desc = "Telescope live grep",
 			},
 			{
-				"<leader>fb",
+				"<leader>tb",
 				function()
 					require("telescope.builtin").buffers()
 				end,
 				desc = "Telescope buffers",
 			},
 			{
-				"<leader>fh",
+				"<leader>th",
 				function()
 					require("telescope.builtin").help_tags()
 				end,

@@ -1,5 +1,6 @@
 return {
 	"lewis6991/gitsigns.nvim",
+	lazy = false,
 	keys = {
 		{
 			"<leader>gd",
@@ -9,6 +10,5 @@ return {
 			desc = "View changes of this file",
 		},
 	},
-
 	opts = {},
 }
