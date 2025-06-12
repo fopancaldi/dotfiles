@@ -222,8 +222,9 @@ bindsym $mod+r mode "resize"
     # Special keys to adjust brightness via brightnessctl
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
-    # Special key to take a screenshot with grim
-    # bindsym Print exec grim
+    # Special key to take a screenshot with flameshot
+    # TODO: Maybe set XDG_CURRENT_DESKTOP when sway is launched from tuigreet?
+    bindsym --locked Print+Shift exec XDG_CURRENT_DESKTOP=sway flameshot gui 
     # Special key to launch firefox
     bindsym --locked XF86Favorites exec flatpak run org.mozilla.firefox
 
@@ -235,6 +236,7 @@ bar {
     swaybar_command waybar
 }
 
+### Floating stuff:
 #
 # Default-floating windows:
 #
@@ -243,6 +245,9 @@ for_window [app_id="gnuplot_qt"] floating enable
 for_window [class="ROOT"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="About"] floating enable
-
+#
+# Show flameshot on all monitors
+#
+for_window [app_id="flameshot"] border pixel 0, floating enable, fullscreen disable, move absolute position 0 0
 
 include /etc/sway/config.d/*
