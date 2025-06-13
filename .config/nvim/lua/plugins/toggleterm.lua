@@ -6,7 +6,8 @@ return {
 		{
 			"<leader>tt",
 			function()
-				vim.cmd("ToggleTerm direction=float")
+				local ntpath = require("neo-tree.sources.manager").get_state("filesystem").path
+				vim.cmd("ToggleTerm direction=float dir=" .. ntpath)
 			end,
 			desc = "Toggle floating terminal",
 		},
