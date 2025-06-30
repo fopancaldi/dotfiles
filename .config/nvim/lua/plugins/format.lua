@@ -29,14 +29,15 @@ return {
 			markdown = { "prettier" },
 			yaml = { "prettier" },
 		},
+		formatters = {
+			fprettify = {
+				prepend_args = { "--indent", "2" },
+			},
+		},
 		format_on_save = {
 			lsp_fallback = true,
 			async = false,
 			timeout_ms = 2000,
 		},
-		-- This was inside the function "config", can you rewrite so that it can be inside "opts"?
-		--[[conform.formatters.fprettify = {
-				prepend_args = { "--indent", "2" },
-			}]]
 	},
 }

@@ -26,4 +26,11 @@ vim.cmd("set clipboard+=unnamedplus")
 -- Search stuff
 vim.cmd("set ignorecase")
 
+-- Tell nvim that the files with the ".dat" extension need to be interpreted with dat.lua
+vim.filetype.add({
+	extension = {
+		dat = "dat",
+	},
+})
+
 -- File-specific settings are in "after/ftconfig"

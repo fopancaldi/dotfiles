@@ -3,9 +3,10 @@ return {
 	lazy = false,
 	keys = {
 		{
-			"<leader>gd",
+			"<leader>Gd",
 			function()
-				require("gitsigns").diffthis()
+				require("gitsigns").diffthis(base, { split = "rightbelow" })
+				vim.cmd("wincmd l")
 			end,
 			desc = "View changes of this file",
 		},

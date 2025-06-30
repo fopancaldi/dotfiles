@@ -75,6 +75,7 @@ return {
 						"-I../build/_deps/range-v3-src/include",
 						"-I./build/_deps/range-v3-src/include",
 						"-DALPAKA_ACC_CPU_B_SEQ_T_SEQ_ENABLED",
+						"-I" .. os.getenv("HOME") .. "/alpaka-source",
 						"-I" .. os.getenv("HOME") .. "/root/include",
 					},
 				},
@@ -90,6 +91,8 @@ return {
 			-- It is an alternative way of setting up lua_ls
 
 			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
+			vim.keymap.set({ "n" }, "<leader>gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+			vim.keymap.set({ "n" }, "<leader>gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
 		end,
 	},
 }
