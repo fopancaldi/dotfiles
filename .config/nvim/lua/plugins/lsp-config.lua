@@ -74,8 +74,13 @@ return {
 						"-I./build/_deps/doctest-src/doctest",
 						"-I../build/_deps/range-v3-src/include",
 						"-I./build/_deps/range-v3-src/include",
+						--"-I../build/_deps/mdspan-src/include",
+						--"-I./build/_deps/mdspan-src/include",
 						"-DALPAKA_ACC_CPU_B_SEQ_T_SEQ_ENABLED",
-						"-I" .. os.getenv("HOME") .. "/alpaka-source",
+						--"-DALPAKA_USE_MDSPAN",
+						"-I"
+							.. os.getenv("HOME")
+							.. "/alpaka-source",
 						"-I" .. os.getenv("HOME") .. "/root/include",
 					},
 				},

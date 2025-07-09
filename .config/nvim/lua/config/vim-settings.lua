@@ -33,4 +33,17 @@ vim.filetype.add({
 	},
 })
 
--- File-specific settings are in "after/ftconfig"
+-- Open pdf files with zathura when their buffer is loaded
+vim.cmd([[autocmd BufEnter *.pdf execute "!zathura '%'" | bdelete %]])
+
+-- Folding stuff
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldtext = ""
+vim.opt.fillchars = "fold: "
+vim.opt.foldcolumn = "0"
+vim.opt.foldnestmax = 4
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "checkhealth", "dashboard", "markdown", "neo-tree", "TelescopeResults" },
+	command = "setlocal nofoldenable",
+})

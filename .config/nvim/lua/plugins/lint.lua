@@ -2,7 +2,7 @@ return {
 	"mfussenegger/nvim-lint",
 	keys = {
 		{
-			"<leader>li",
+			"<leader>lf",
 			function()
 				require("lint").try_lint()
 			end,
