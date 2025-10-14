@@ -30,6 +30,7 @@ vim.cmd("set ignorecase")
 vim.filetype.add({
 	extension = {
 		dat = "dat",
+		tpp = "cpp",
 	},
 })
 

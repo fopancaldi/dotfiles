@@ -27,6 +27,7 @@ return {
 			},
 			lua = { "stylua" },
 			markdown = { "prettier" },
+			rust = { "rustfmt" },
 			yaml = { "prettier" },
 		},
 		formatters = {

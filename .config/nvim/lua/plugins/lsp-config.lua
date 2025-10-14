@@ -41,6 +41,8 @@ return {
 				"marksman",
 				"alex",
 				"prettier",
+				-- Rust
+				-- managed via rustup
 				-- TODO: XML
 				--"sonarlint-language-server",
 				"lemminx",
@@ -72,15 +74,10 @@ return {
 						"-I./build/_deps/alpaka-src/include",
 						"-I../build/_deps/doctest-src/doctest",
 						"-I./build/_deps/doctest-src/doctest",
-						"-I../build/_deps/range-v3-src/include",
-						"-I./build/_deps/range-v3-src/include",
-						--"-I../build/_deps/mdspan-src/include",
-						--"-I./build/_deps/mdspan-src/include",
+						"-I../build/_deps/cluestering-src/include",
+						"-I./build/_deps/cluestering-src/include",
 						"-DALPAKA_ACC_CPU_B_SEQ_T_SEQ_ENABLED",
-						--"-DALPAKA_USE_MDSPAN",
-						"-I"
-							.. os.getenv("HOME")
-							.. "/alpaka-source",
+						"-I" .. os.getenv("HOME") .. "/alpaka-source",
 						"-I" .. os.getenv("HOME") .. "/root/include",
 					},
 				},
@@ -90,6 +87,7 @@ return {
 			lspconfig.texlab.setup({ capabilities = ls_capabilities })
 			lspconfig.lua_ls.setup({ capabilities = ls_capabilities })
 			lspconfig.marksman.setup({ capabilities = ls_capabilities })
+			lspconfig.rust_analyzer.setup({ capabilities = ls_capabilities })
 			lspconfig.yamlls.setup({ capabilities = ls_capabilities })
 
 			-- See https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#lua_ls

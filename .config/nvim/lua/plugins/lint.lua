@@ -19,6 +19,7 @@ return {
 			latex = { "vale" },
 			lua = { "luacheck" },
 			markdown = { "alex" },
+			rust = { "clippy" },
 			yaml = { "yamllint" },
 		}
 

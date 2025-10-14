@@ -17,6 +17,8 @@ set $right l
 set $term foot
 # Your preferred application launcher
 set $menu fuzzel
+# Environment variables
+# exec export XDG_CURRENT_DESKTOP=sway
 
 # include /etc/sway/config-vars.d/*
 
@@ -28,6 +30,10 @@ output DP-3 pos 0 0 res 1920x1080
 output eDP-1 pos 0 1080 res 1920x1080
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
+
+# Other commands at launch
+exec gammastep
+# exec systemctl --user set-environment XDG_CURRENT_DESKTOP=sway
 
 # TODO:
 ### Idle configuration
@@ -118,9 +124,6 @@ default_border pixel 3
     # Switch to previous/next workspace
     bindsym $mod+Prior workspace prev
     bindsym $mod+Next workspace next
-    # TODO: Bind Print to $mod in the correct way
-    bindsym Print+Prior workspace prev
-    bindsym Print+Next workspace next
     # Switch to previous/next workspace
     bindsym $mod+Shift+Prior move container to workspace prev
     bindsym $mod+Shift+Next move container to workspace next
@@ -224,7 +227,7 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
     # Special key to take a screenshot with flameshot
     # TODO: Maybe set XDG_CURRENT_DESKTOP when sway is launched from tuigreet?
-    bindsym --locked Print+Shift exec XDG_CURRENT_DESKTOP=sway flameshot gui 
+    bindsym --locked Print exec XDG_CURRENT_DESKTOP=sway flameshot gui 
     # Special key to launch firefox
     bindsym --locked XF86Favorites exec flatpak run org.mozilla.firefox
 
