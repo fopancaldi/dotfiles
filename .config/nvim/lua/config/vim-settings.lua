@@ -8,9 +8,7 @@ vim.g.maplocalleader = "\\"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.linebreak = true
--- TODO: Replace with the line below in Neovim >= 0.11
-vim.cmd("set guicursor=n-v-ve:block,i-r-c-ci-cr:ver25,o:hor50,a:blinkon0")
---vim.cmd("set guicursor=n-v-ve:block,i-r-c-ci-cr-t:ver25,o:hor50,a:blinkon0")
+vim.cmd("set guicursor=n-v-ve:block,i-r-c-ci-cr-t:ver25,o:hor50,a:blinkon0")
 
 -- Diagnostic stuff
 vim.diagnostic.config({ virtual_text = true })
