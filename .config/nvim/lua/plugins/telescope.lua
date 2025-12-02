@@ -34,6 +34,11 @@ return {
 			},
 		},
 		opts = {
+			defaults = {
+				layout_config = {
+					preview_width = 120,
+				},
+			},
 			pickers = {
 				colorscheme = {
 					enable_preview = true,
