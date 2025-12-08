@@ -21,13 +21,10 @@ return {
 			cpp = { "clang-format" },
 			cu = { "clang-format" },
 			fortran = { "fprettify" },
-			latex = {
-				"latexindent",
-				"bibtex-tidy",
-			},
 			lua = { "stylua" },
 			markdown = { "prettier" },
 			rust = { "rustfmt" },
+			-- texlab already handles formatting
 			yaml = { "prettier" },
 		},
 		formatters = {
