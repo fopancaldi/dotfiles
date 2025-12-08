@@ -1,0 +1,18 @@
+theme = "sunset"
+
+[editor]
+bufferline = "multiple"
+line-number = "relative"
+mouse = false
+scrolloff = 10
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
