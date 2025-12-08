@@ -28,11 +28,6 @@ return {
 				"fortls",
 				-- No available Fortran linters in mason.nvim!
 				"fprettify",
-				-- Latex
-				"texlab",
-				"vale",
-				"latexindent",
-				"bibtex-tidy",
 				-- Lua
 				"lua-language-server",
 				"luacheck",
@@ -43,6 +38,11 @@ return {
 				"prettier",
 				-- Rust
 				-- managed via rustup
+				-- Tex
+				"texlab",
+				"vale", -- see https://github.com/mfussenegger/nvim-lint/issues/528
+				"latexindent",
+				"bibtex-tidy",
 				-- TODO: XML
 				--"sonarlint-language-server",
 				"lemminx",
@@ -68,26 +68,28 @@ return {
 				init_options = {
 					fallbackFlags = {
 						"--std=c++20",
-						"-I./src",
-						"-I../src",
-						"-I../build/_deps/alpaka-src/include",
-						"-I./build/_deps/alpaka-src/include",
-						"-I../build/_deps/doctest-src/doctest",
-						"-I./build/_deps/doctest-src/doctest",
-						"-I../build/_deps/cluestering-src/include",
-						"-I./build/_deps/cluestering-src/include",
 						"-DALPAKA_ACC_CPU_B_SEQ_T_SEQ_ENABLED",
-						"-I" .. os.getenv("HOME") .. "/alpaka-source",
+						"-I" .. os.getenv("HOME") .. "/alpaka/include",
+						"-I" .. os.getenv("HOME") .. "/alpaka_tutorial/hpp",
+						"-I" .. os.getenv("HOME") .. "/alpaka_tutorial/build/_deps/alpaka-src/include",
+						"-I" .. os.getenv("HOME") .. "/CLUEstering/include",
+						"-I" .. os.getenv("HOME") .. "/cpp_psb/src",
+						"-I" .. os.getenv("HOME") .. "/cpp_psb/build/_deps/alpaka-src/include",
+						"-I" .. os.getenv("HOME") .. "/cpp_psb/build/_deps/doctest-src/doctest",
+						"-I" .. os.getenv("HOME") .. "/cpp_psb/build/_deps/cluestering-src/include",
 						"-I" .. os.getenv("HOME") .. "/root/include",
+						"-I" .. os.getenv("HOME") .. "/xstl/include",
 					},
 				},
 				cmd = { "clangd", "--enable-config" },
 			})
 			lspconfig.fortls.setup({ capabilities = ls_capabilities })
-			lspconfig.texlab.setup({ capabilities = ls_capabilities })
 			lspconfig.lua_ls.setup({ capabilities = ls_capabilities })
 			lspconfig.marksman.setup({ capabilities = ls_capabilities })
 			lspconfig.rust_analyzer.setup({ capabilities = ls_capabilities })
+			lspconfig.texlab.setup({
+				capabilities = ls_capabilities,
+			})
 			lspconfig.yamlls.setup({ capabilities = ls_capabilities })
 
 			-- See https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#lua_ls
