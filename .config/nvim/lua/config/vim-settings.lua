@@ -8,6 +8,7 @@ vim.g.maplocalleader = "\\"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.linebreak = true
+vim.opt.scrolloff = 10
 vim.cmd("set guicursor=n-v-ve:block,i-r-c-ci-cr-t:ver25,o:hor50,a:blinkon0")
 
 -- Diagnostic stuff
@@ -36,7 +37,7 @@ vim.filetype.add({
 vim.cmd([[autocmd BufEnter *.pdf execute "!zathura '%'" | bdelete %]])
 
 -- Folding stuff
-vim.opt.foldmethod = "expr"
+vim.opt.foldmethod = "manual"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldtext = ""
 vim.opt.fillchars = "fold: "
