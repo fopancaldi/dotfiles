@@ -16,10 +16,10 @@ return {
 			cmake = { "cmakelint" },
 			--cpp = { "cpplint" },
 			--TODO: cuda
-			latex = { "vale" },
 			lua = { "luacheck" },
 			markdown = { "alex" },
 			rust = { "clippy" },
+			tex = { "vale" },
 			yaml = { "yamllint" },
 		}
 
