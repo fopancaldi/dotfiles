@@ -7,5 +7,5 @@ end, { desc = "Clear search highlight" })
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { noremap = true })
 
 -- Helix-like line navigation
-vim.keymap.set("n", "gl", "$", { noremap = true })
-vim.keymap.set("n", "gh", "0", { noremap = true })
+vim.keymap.set("n", "gl", "$", { noremap = true, desc = "Go to line begin" })
+vim.keymap.set("n", "gh", "0", { noremap = true, desc = "Go to line end" })
