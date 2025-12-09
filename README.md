@@ -28,4 +28,5 @@ The scripts require the `bash` shell.
 - [`sioyek`](https://sioyek.info): pdf reader
 - [`sway`](https://github.com/swaywm/sway): window manager
 - [`waybar`](https://github.com/Alexays/Waybar): top bar provider
+- [`yazi`](https://yazi-rs.github.io/): file manager
 - [`zathura`](https://pwmt.org/projects/zathura): pdf reader
