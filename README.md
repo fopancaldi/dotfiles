@@ -3,7 +3,7 @@
 Requires [`stow`](https://www.gnu.org/software/stow).
 The scripts require the `bash` shell.
 
-# Usage (TODO)
+# Usage
 
     git clone git@github.com:fopancaldi/dotfiles.git
     cd $HOME/dotfiles
