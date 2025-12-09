@@ -24,6 +24,7 @@ The scripts require the `bash` shell.
 - [`greetd`](https://sr.ht/~kennylevinsen/greetd): login manager
 - [`keyd`](https://github.com/rvaiya/keyd): key remapper
 - [`helix`](https://helix-editor.com): text editor
+- [`mpv`](https://mpv.io/): video player
 - [`neovim`](https://github.com/neovim/neovim): text editor
 - [`sioyek`](https://sioyek.info): pdf reader
 - [`sway`](https://github.com/swaywm/sway): window manager
