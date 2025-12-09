@@ -243,7 +243,7 @@ bar {
 #
 # Default-floating windows:
 #
-for_window [app_id="qalculate-gtk"] floating enable
+for_window [app_id="qalculate"] floating enable
 for_window [app_id="gnuplot_qt"] floating enable
 for_window [app_id="mpv"] floating enable
 for_window [class="ROOT"] floating enable
