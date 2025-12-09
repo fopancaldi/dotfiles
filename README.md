@@ -1,3 +1,5 @@
+My dotfiles.
+
 # Prerequisites
 
 Requires [`stow`](https://www.gnu.org/software/stow).
@@ -5,8 +7,9 @@ The scripts require the `bash` shell.
 
 # Usage
 
+    cd
     git clone git@github.com:fopancaldi/dotfiles.git
-    cd $HOME/dotfiles
+    cd dotfiles
     stow .
     chmod u+x not_stowed/setup.sh not_stowed/setup_sudo.sh not_stowed/scripts/*.sh
     not_stowed/setup.sh
