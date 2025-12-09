@@ -8,7 +8,7 @@ The scripts require the `bash` shell.
     git clone git@github.com:fopancaldi/dotfiles.git
     cd $HOME/dotfiles
     stow .
-    chmod u+x not_stowed/setup.sh not_stowed/setup_sudo.sh
+    chmod u+x not_stowed/setup.sh not_stowed/setup_sudo.sh not_stowed/scripts/*.sh
     not_stowed/setup.sh
     not_stowed/setup_sudo.sh
 
