@@ -20,7 +20,7 @@ The scripts require the `bash` shell.
 - [`flameshot`](https://flameshot.org/): screenshot tool
 - [`foot`](https://codeberg.org/dnkl/foot/): terminal emulator
 - [`fuzzel`](https://codeberg.org/dnkl/fuzzel/): app launcher
-- [`gammastep`](https://gitlab.com/chinstrap/gammastep/): night shift tool
+- [`gammastep`](https://gitlab.com/chinstrap/gammastep/): blue light reduction tool
 - [`greetd`](https://sr.ht/~kennylevinsen/greetd/) (+ [`tuigreet`](https://github.com/apognu/tuigreet/)): login manager
 - [`keyd`](https://github.com/rvaiya/keyd/): key remapping tool
 - [`helix`](https://helix-editor.com/): text editor
