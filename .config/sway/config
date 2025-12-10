@@ -252,6 +252,7 @@ for_window [window_role="About"] floating enable
 #
 # Other window customizations:
 #
+# FIXME: Make flameshot work for real
 for_window [app_id="flameshot"] border pixel 0, floating enable, fullscreen disable, move absolute position 0 0
 for_window [app_id="swayimg"] floating enable, border pixel 3
 
