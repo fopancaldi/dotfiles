@@ -3,6 +3,7 @@ name = Agave Nerd Font
 
 [viewer]
 window = #000000FF
+scale = fit
 
 [info.viewer]
 top_left = name
