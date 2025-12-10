@@ -7,3 +7,7 @@ scale = fit
 
 [info.viewer]
 top_left = name
+
+[keys.viewer]
+ScrollRight = step_right 5
+ScrollLeft = step_left 5
