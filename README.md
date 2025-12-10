@@ -29,6 +29,7 @@ The scripts require the `bash` shell.
 - [`sioyek`](https://sioyek.info/): pdf reader
 - [`starship`](https://starship.rs/): terminal prompt
 - [`sway`](https://swaywm.org/): window manager
+- [`swayimg`](https://github.com/artemsen/swayimg/): image viewer
 - [`tealdeer`](https://tealdeer-rs.github.io/tealdeer/): shorter man
 - [`waybar`](https://github.com/Alexays/Waybar/): top bar provider
 - [`yazi`](https://yazi-rs.github.io/): file manager

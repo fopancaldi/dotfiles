@@ -1,0 +1,8 @@
+[font]
+name = Agave Nerd Font
+
+[viewer]
+window = #000000FF
+
+[info.viewer]
+top_left = name
