@@ -124,9 +124,10 @@ default_border pixel 3
     # Switch to previous/next workspace
     bindsym $mod+Prior workspace prev
     bindsym $mod+Next workspace next
-    # Switch to previous/next workspace
-    bindsym $mod+Shift+Prior move container to workspace prev
-    bindsym $mod+Shift+Next move container to workspace next
+    # TODO: If I am in workspace 3, and workspace 4 is already existing while workspace 2 is not,
+    # these keys create the workspace if not existing
+    # bindsym $mod+Shift+Prior move container to workspace prev
+    # bindsym $mod+Shift+Next move container to workspace next
     # Switch to workspace
     bindsym $mod+1 workspace number 1
     bindsym $mod+2 workspace number 2
