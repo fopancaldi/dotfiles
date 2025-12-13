@@ -19,6 +19,8 @@ set $term foot
 set $menu fuzzel
 # Your preferred text editor
 set $editor nvim
+# Your preferred file manager
+set $fmanager yazi
 # Environment variables
 # exec export XDG_CURRENT_DESKTOP=sway
 
@@ -237,6 +239,9 @@ bindsym $mod+r mode "resize"
     bindsym --locked Print exec XDG_CURRENT_DESKTOP=sway flameshot gui 
     # Special key to launch firefox
     bindsym --locked XF86Favorites exec flatpak run org.mozilla.firefox
+    # Special key to launch the file manager
+    # TODO: bindsym --locked XF86Favorites+Shift exec foot yazi
+    bindsym --locked XF86Favorites+Shift exec fuzzel
 
 #
 # Status Bar:
