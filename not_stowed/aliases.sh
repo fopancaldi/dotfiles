@@ -5,4 +5,5 @@ alias la="ls -A"
 alias ll="ls -l"
 alias lal="ls -Al"
 
+alias wkt="wiki-tui"
 alias ytt="youtube-tui"
