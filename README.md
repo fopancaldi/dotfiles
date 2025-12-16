@@ -31,6 +31,5 @@ The scripts require the `bash` shell.
 - [`sway`](https://swaywm.org/) (+ [`waybar`](https://waybar.org/)): window manager
 - [`swayimg`](https://github.com/artemsen/swayimg/): image viewer
 - [`tealdeer`](https://tealdeer-rs.github.io/tealdeer/): shorter man
-- [`waybar`](https://github.com/Alexays/Waybar/): top bar provider
 - [`yazi`](https://yazi-rs.github.io/): file manager
 - [`zathura`](https://pwmt.org/projects/zathura/): pdf reader
