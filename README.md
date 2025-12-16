@@ -2,7 +2,7 @@ My dotfiles.
 
 # Prerequisites
 
-Requires [`stow`](https://www.gnu.org/software/stow).
+Requires [`stow`](https://www.gnu.org/software/stow/).
 The scripts require the `bash` shell.
 
 # Usage
