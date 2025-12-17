@@ -28,7 +28,7 @@ set $fmanager yazi
 
 ### Output configuration
 #
-output * bg ${HOME}/dotfiles/Pictures/Wallpapers/tron.png fill
+output * bg ${HOME}/dotfiles/Pictures/Wallpapers/bilewater.png fill
 #
 output HDMI-A-2 pos 0 0 res 2048x1152
 output eDP-1 pos 0 1152 res 1920x1080
