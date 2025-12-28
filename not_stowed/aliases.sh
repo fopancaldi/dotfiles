@@ -1,5 +1,3 @@
-alias cp="gcp"
-
 alias ls="lsd"
 alias la="ls -A"
 alias ll="ls -l"
