@@ -1,27 +1,9 @@
- [language-server.clangd--001]
-
-command = "clangd"
-
-args = [
-
-"--log=verbose",
-
-"--compile-commands-dir=./build",
-
-"--query-driver=C:/.conan/3f7066/1/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe"
-
-]
+[language-server.clangd]
+config = { fallbackFlags = "-std=c++20" }
 
 [[language]]
-
 name = "cpp"
-
-roots = ["CMakeLists.txt"]
-
-indent = {tab-width = 2, unit = " "}
-
-language-servers = ["clangd--001"] # One or more language servers.
-
-file-types = ["cpp", "h"]
-
-comment-token = "//" 
+roots = [ "CMakeLists.txt" ]
+indent = { tab-width = 4, unit = " " }
+auto-format = true
+formatter = { command = "clang-format" }
