@@ -28,7 +28,7 @@ The scripts require the `bash` shell.
 - [`neovim`](https://neovim.io/): text editor
 - [`sioyek`](https://sioyek.info/): pdf reader
 - [`starship`](https://starship.rs/): terminal prompt
-- [`sway`](https://swaywm.org/) (+ [`waybar`](https://waybar.org/), [`swaylock`](https://github.com/swaywm/swaylock/)): window manager
+- [`sway`](https://swaywm.org/) (+ [`swaylock`](https://github.com/swaywm/swaylock/), [`waybar`](https://waybar.org/)): window manager
 - [`swayimg`](https://github.com/artemsen/swayimg/): image viewer
 - [`tealdeer`](https://tealdeer-rs.github.io/tealdeer/): shorter man
 - [`yazi`](https://yazi-rs.github.io/): file manager
