@@ -1,4 +1,10 @@
 [[language]]
+name = "bash"
+indent = { tab-width = 2, unit = " " }
+auto-format = true
+formatter = { command = "beautysh", args = [ "-" ] }
+
+[[language]]
 name = "cpp"
 roots = [ "CMakeLists.txt" ]
 indent = { tab-width = 4, unit = " " }
