@@ -1,9 +1,9 @@
-[language-server.clangd]
-config = { fallbackFlags = "-std=c++20" }
-
 [[language]]
 name = "cpp"
 roots = [ "CMakeLists.txt" ]
 indent = { tab-width = 4, unit = " " }
 auto-format = true
 formatter = { command = "clang-format" }
+
+[language-server.clangd]
+config = { fallbackFlags = "-std=c++20" }
