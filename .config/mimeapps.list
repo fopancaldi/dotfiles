@@ -6,3 +6,6 @@ image/jpeg=swayimg.desktop;
 image/png=swayimg.desktop;
 
 image/gif=mpv.desktop;
+
+# edopro-bin
+x-scheme-handler/discord-694795560288256021=discord-694795560288256021.desktop
