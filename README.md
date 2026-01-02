@@ -33,3 +33,5 @@ The scripts require the `bash` shell.
 - [`tealdeer`](https://tealdeer-rs.github.io/tealdeer/): shorter man
 - [`yazi`](https://yazi-rs.github.io/): file manager
 - [`zathura`](https://pwmt.org/projects/zathura/): pdf reader
+
+TODO: Add `stow` directory, remove `not_stowed` and `.stow-local-ignore`
