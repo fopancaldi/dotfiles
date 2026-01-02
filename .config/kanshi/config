@@ -1,0 +1,13 @@
+profile alone {
+	output "AU Optronics 0x103D Unknown" mode 1920x1080 position 0,0
+}
+
+profile cnaf {
+	output "HannStar Display Corp HP247DJB 1234567890123" mode 1920x1080 position 0,-1080
+	output "AU Optronics 0x103D Unknown" mode 1920x1080 position 0,0
+}
+
+profile irnerio {
+	output "Samsung Electric Company SyncMaster HMBZ501040" mode 2048x1152 position 0,-1152
+	output "AU Optronics 0x103D Unknown" mode 1920x1080 position 0,0
+}
