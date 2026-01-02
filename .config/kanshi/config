@@ -11,3 +11,7 @@ profile irnerio {
 	output "Samsung Electric Company SyncMaster HMBZ501040" mode 2048x1152 position 0,-1152
 	output "AU Optronics 0x103D Unknown" mode 1920x1080 position 0,0
 }
+
+profile old {
+	output "cPATH 0x14C7 Unknown" mode 1366x768 position 0,0
+}
