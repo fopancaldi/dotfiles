@@ -242,6 +242,8 @@ bindsym $mod+r mode "resize"
     # Special key to launch the file manager
     # TODO: bindsym --locked XF86Favorites+Shift exec foot yazi
     bindsym --locked XF86Favorites+Shift exec fuzzel
+    # Special key to launch kanshi
+    bindsym --locked XF86Display exec kanshi
 
 #
 # Status Bar:
@@ -267,5 +269,7 @@ for_window [window_role="About"] floating enable
 # FIXME: Make flameshot work for real
 for_window [app_id="flameshot"] border pixel 0, floating enable, fullscreen disable, move absolute position 0 0
 for_window [app_id="swayimg"] floating enable, border pixel 3
+
+#exec_always systemctl --user start sway-session.target
 
 include /etc/sway/config.d/*
