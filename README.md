@@ -35,3 +35,4 @@ The scripts require the `bash` shell.
 - [`zathura`](https://pwmt.org/projects/zathura/): pdf reader
 
 TODO: Add `stow` directory, remove `not_stowed` and `.stow-local-ignore`
+TODO: Make the scripts `.bash`, or change the shebang to `#!/bin/sh`
