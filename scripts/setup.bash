@@ -6,7 +6,7 @@ initial_dir="$(pwd | tr -d '\r')"
 cd "${HOME}/dotfiles" || exit $?
 
 for file in ".bashrc" ".bash_profile" ".bash_logout"; do
- scripts/common/mv_bak_if_sensible.bash "${HOME}/${file}"
+ scripts/common/smart_mv_bak.bash "${HOME}/${file}"
 done
 unset file
 

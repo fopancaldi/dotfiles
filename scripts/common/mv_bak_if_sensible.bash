@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ "$#" -ne 1 ]]; then
-  echo "mv_bak_if_sensible called with $# parameters"
+  echo "smart_mv_bak.bash called with $# parameters"
   exit 2
 fi
 
