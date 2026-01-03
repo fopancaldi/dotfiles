@@ -31,6 +31,10 @@ vim.filetype.add({
 		dat = "dat",
 		tpp = "cpp",
 	},
+	-- No idea why the pattern '/%.sway/config$' does not match
+	pattern = {
+		[".*/sway/config%.d/.*"] = "swayconfig",
+	},
 })
 
 -- Open pdf files with zathura when their buffer is loaded
