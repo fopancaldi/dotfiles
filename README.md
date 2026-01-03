@@ -34,7 +34,6 @@ The scripts require the `bash` shell.
 - [`yazi`](https://yazi-rs.github.io/): file manager
 - [`zathura`](https://pwmt.org/projects/zathura/): pdf reader
 
-TODO: Add `stow` directory, remove `not_stowed` and `.stow-local-ignore`
-TODO: Make the scripts `.bash`, or change the shebang to `#!/bin/sh`
-TODO: Split `.config/sway/config` into multiple files
 TODO: In kanshi, configure each output once (not available on kanshi 1.5)
+
+TODO: Put screenshots in /tmp or similar?
