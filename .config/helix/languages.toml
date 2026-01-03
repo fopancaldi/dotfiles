@@ -12,4 +12,6 @@ auto-format = true
 formatter = { command = "clang-format" }
 
 [language-server.clangd]
+command = "clangd"
+args = [ "--clang-tidy" ]
 config = { fallbackFlags = "-std=c++20" }
