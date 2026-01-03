@@ -10,10 +10,8 @@ The scripts require the `bash` shell.
     cd
     git clone git@github.com:fopancaldi/dotfiles.git
     cd dotfiles
-    stow .
-    chmod u+x not_stowed/setup.sh not_stowed/setup_sudo.sh not_stowed/scripts/*.sh
-    not_stowed/setup.sh
-    not_stowed/setup_sudo.sh
+    scripts/setup.bash
+    scripts/setup_su.bash
 
 # Configured programs
 
@@ -35,5 +33,3 @@ The scripts require the `bash` shell.
 - [`zathura`](https://pwmt.org/projects/zathura/): pdf reader
 
 TODO: In kanshi, configure each output once (not available on kanshi 1.5)
-
-TODO: Put screenshots in /tmp or similar?
