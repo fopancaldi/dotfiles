@@ -13,5 +13,5 @@ unset file
 scripts/nosu/make_dirs.bash
 stow stow
 
-cd "${initial_dir}" || exit $?
+cd "$initial_dir" || exit $?
 exit

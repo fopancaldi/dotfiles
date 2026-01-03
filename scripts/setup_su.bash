@@ -6,7 +6,7 @@ initial_dir="$(pwd | tr -d '\r')"
 cd "${HOME}/dotfiles" || exit $?
 
 for file in "greetd/config.toml" "keyd/default.conf"; do
-  target="/etc/$file"
+  target="/etc/${file}"
   file="${HOME}/dotfiles/${file}"
 
   echo "Backing up $target"
@@ -17,5 +17,5 @@ for file in "greetd/config.toml" "keyd/default.conf"; do
 done
 unset file
 
-cd "${initial_dir}" || exit $?
+cd "$initial_dir" || exit $?
 exit
