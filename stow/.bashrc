@@ -1,6 +1,7 @@
 [[ $- != *i* ]] && return
 
 shopt -s checkwinsize
+export PATH="$HOME/.cargo/bin:$PATH"
 
-source "${HOME}/dotfiles/aliases.bash"
+[[ -f ~/.bash_aliases ]] && source "${HOME}/.bash_aliases"
 eval "$(starship init bash)"

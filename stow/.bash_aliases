@@ -1,5 +1,3 @@
-#!/bin/bash
-
 alias ls="lsd"
 alias la="ls -A"
 alias ll="ls -l"
