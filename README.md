@@ -37,3 +37,4 @@ The scripts require the `bash` shell.
 TODO: Add `stow` directory, remove `not_stowed` and `.stow-local-ignore`
 TODO: Make the scripts `.bash`, or change the shebang to `#!/bin/sh`
 TODO: Split `.config/sway/config` into multiple files
+TODO: In kanshi, configure each output once (not available on kanshi 1.5)
