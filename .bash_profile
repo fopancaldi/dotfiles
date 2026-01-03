@@ -1,0 +1,1 @@
+[[ -f ~/.bashrc ]] && . "${HOME}/.bashrc"
