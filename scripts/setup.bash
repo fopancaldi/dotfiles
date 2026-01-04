@@ -9,8 +9,8 @@ for file in ".bashrc" ".bash_profile" ".bash_logout"; do
     scripts/common/smart_mv_bak.bash "${HOME}/${file}"
 done
 unset -v file
+mkdir -p "${HOME}/Pictures/Screenshots"
 
-scripts/nosu/make_dirs.bash
 stow --target "$HOME" tilde
 
 cd "$initial_dir" || exit $?
