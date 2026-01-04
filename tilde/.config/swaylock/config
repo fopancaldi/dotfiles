@@ -1,4 +1,5 @@
 color=000000
+daemonize
 font=Agave Nerd Font
 indicator-caps-lock
 show-keyboard-layout
