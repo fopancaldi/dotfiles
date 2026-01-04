@@ -20,7 +20,7 @@ for file in etc/**; do
 done
 unset -v file dir
 
-echo "Stowing etc"
+echo "Stowing etc to /etc"
 sudo -k stow --target /etc etc
 
 cd "$initial_dir" || exit $?
