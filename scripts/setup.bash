@@ -8,7 +8,7 @@ cd "${HOME}/dotfiles" || exit $?
 for file in ".bashrc" ".bash_profile" ".bash_logout"; do
     scripts/common/smart_mv_bak.bash "${HOME}/${file}"
 done
-unset file
+unset -v file
 
 scripts/nosu/make_dirs.bash
 stow --target "$HOME" tilde
