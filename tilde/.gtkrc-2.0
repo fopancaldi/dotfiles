@@ -1,4 +1,4 @@
 gtk-application-prefer-dark-theme = true
 gtk-cursor-theme-name = "Bibata-Original-Classic"
 gtk-icon-theme-name = "Yaru-magenta"
-gtk-theme-name = "Yaru-magenta"
+gtk-theme-name = "Yaru-magenta-dark"
