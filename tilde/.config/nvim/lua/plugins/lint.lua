@@ -13,7 +13,7 @@ return {
 		local lint = require("lint")
 		lint.linters_by_ft = {
 			bash = { "shellcheck" },
-			cmake = { "cmakelint" },
+			cmake = { "cmake_lint" },
 			--cpp = { "cpplint" },
 			--TODO: cuda
 			lua = { "luacheck" },

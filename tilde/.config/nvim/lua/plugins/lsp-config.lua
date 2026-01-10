@@ -14,8 +14,7 @@ return {
 				"shellcheck",
 				-- CMake
 				"neocmakelsp",
-				"gersemi",
-				"cmakelint",
+				"cmakelang", -- provides both formatter and linter
 				-- C++
 				"clangd",
 				"cpplint",
@@ -62,7 +61,7 @@ return {
 			local ls_capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 			lspconfig.bashls.setup({ capabilities = ls_capabilities })
-			lspconfig.neocmake.setup({ capabilities = ls_capabilities })
+			lspconfig.neocmake.setup({ capabilities = ls_capabilities, cmd = { "neocmakelsp", "stdio" } })
 			lspconfig.clangd.setup({
 				capabilities = ls_capabilities,
 				init_options = {
