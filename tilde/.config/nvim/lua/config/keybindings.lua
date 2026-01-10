@@ -1,11 +1,8 @@
--- Clear seach highlight
 vim.keymap.set("n", "<leader>ch", function()
 	vim.cmd("noh")
-end, { desc = "Clear search highlight" })
+end, { desc = "Clear search highlight", noremap = true })
 
--- Exit terminal
-vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { noremap = true })
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal", noremap = true })
 
--- Helix-like line navigation
-vim.keymap.set("n", "gl", "$", { noremap = true, desc = "Go to line begin" })
-vim.keymap.set("n", "gh", "0", { noremap = true, desc = "Go to line end" })
+vim.keymap.set("n", "gl", "$", { desc = "Go to line begin", noremap = true })
+vim.keymap.set("n", "gh", "0", { desc = "Go to line end", noremap = true })
