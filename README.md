@@ -16,7 +16,7 @@ The scripts require the `bash` shell.
 # Configured programs
 
 - [`flameshot`](https://flameshot.org/): screenshot tool
-- [`foot`](https://codeberg.org/dnkl/foot/): terminal emulator
+- [`foot`](https://codeberg.org/dnkl/foot/) (+[`starship`](https://starship.rs/)): terminal emulator
 - [`fuzzel`](https://codeberg.org/dnkl/fuzzel/): app launcher
 - [`gammastep`](https://gitlab.com/chinstrap/gammastep/): blue light tool
 - [`greetd`](https://sr.ht/~kennylevinsen/greetd/) (+[`tuigreet`](https://github.com/apognu/tuigreet/)): login manager
@@ -26,7 +26,6 @@ The scripts require the `bash` shell.
 - [`mpv`](https://mpv.io/): video player
 - [`neovim`](https://neovim.io/): text editor
 - [`sioyek`](https://sioyek.info/): pdf reader
-- [`starship`](https://starship.rs/): terminal prompt
 - [`sway`](https://swaywm.org/) (+[`swayidle`](https://github.com/swaywm/swayidle/), [`swaylock`](https://github.com/swaywm/swaylock/), [`waybar`](https://waybar.org/)): window manager
 - [`swayimg`](https://github.com/artemsen/swayimg/): image viewer
 - [`tealdeer`](https://tealdeer-rs.github.io/tealdeer/): shorter man
