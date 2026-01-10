@@ -23,6 +23,7 @@ The scripts require the `bash` shell.
 - [`kanshi`](https://gitlab.freedesktop.org/emersion/kanshi/): screen placement tool
 - [`keyd`](https://github.com/rvaiya/keyd/): key remapping tool
 - [`helix`](https://helix-editor.com/): text editor
+- [`mpd`](https://www.musicpd.org/) (+ TODO): music player
 - [`mpv`](https://mpv.io/): video player
 - [`neovim`](https://neovim.io/): text editor
 - [`sioyek`](https://sioyek.info/): pdf reader
