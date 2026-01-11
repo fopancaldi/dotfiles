@@ -6,7 +6,7 @@ return {
       "<leader>Gd",
       function()
         require("gitsigns").diffthis(base, { split = "rightbelow" })
-        vim.cmd("wincmd l")
+        vim.api.nvim_command("wincmd l")
       end,
       desc = "View changes of this file",
     },

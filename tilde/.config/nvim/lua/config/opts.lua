@@ -15,4 +15,4 @@ vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 
-vim.cmd("colorscheme retrobox")
+vim.api.nvim_command("colorscheme retrobox")

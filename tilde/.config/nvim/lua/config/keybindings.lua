@@ -1,5 +1,5 @@
 vim.keymap.set("n", "<leader>ch", function()
-  vim.cmd("noh")
+  vim.api.nvim_command("noh")
 end, { desc = "Clear search highlight", noremap = true })
 
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal", noremap = true })
