@@ -1,29 +1,29 @@
 return {
-	"nvim-treesitter/nvim-treesitter",
-	version = "0.10.0",
-	build = ":TSUpdate",
-	config = function()
-		local configs = require("nvim-treesitter.configs")
-		configs.setup({
-			ensure_installed = {
-				"bash",
-				"bibtex",
-				"cpp",
-				"cuda",
-				"fortran",
-				--"latex",
-				"lua",
-				"markdown",
-				"markdown_inline",
-				"regex",
-				"vim",
-				"vimdoc",
-				"xml",
-			},
-			highlight = {
-				enable = true,
-			},
-			indent = { enable = true },
-		})
-	end,
+  "nvim-treesitter/nvim-treesitter",
+  version = "0.10.0",
+  build = ":TSUpdate",
+  config = function()
+    local configs = require("nvim-treesitter.configs")
+    configs.setup({
+      ensure_installed = {
+        "bash",
+        "bibtex",
+        "cpp",
+        "cuda",
+        "fortran",
+        --"latex",
+        "lua",
+        "markdown",
+        "markdown_inline",
+        "regex",
+        "vim",
+        "vimdoc",
+        "xml",
+      },
+      highlight = {
+        enable = true,
+      },
+      indent = { enable = true },
+    })
+  end,
 }
