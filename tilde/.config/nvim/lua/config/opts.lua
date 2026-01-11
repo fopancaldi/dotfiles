@@ -8,3 +8,9 @@ vim.opt.relativenumber = true
 vim.opt.scrolloff = 10
 vim.diagnostic.config({ virtual_text = true })
 vim.lsp.set_log_level("off")
+
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 0
+vim.opt.expandtab = true
+vim.opt.autoindent = true
+vim.opt.smartindent = true
