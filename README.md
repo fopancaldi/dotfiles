@@ -8,7 +8,7 @@ The scripts require the `bash` shell.
 # Usage
 
     cd
-    git clone git@github.com:fopancaldi/dotfiles.git
+    git clone https://github.com/fopancaldi/dotfiles.git
     cd dotfiles
     scripts/setup.bash
     scripts/setup_su.bash
