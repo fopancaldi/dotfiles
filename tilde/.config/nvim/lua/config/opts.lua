@@ -6,7 +6,7 @@ vim.opt.ignorecase = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.scrolloff = 10
-vim.diagnostic.config({ virtual_text = true })
+vim.diagnostic.config({ virtual_text = true, virtual_lines = false })
 vim.lsp.set_log_level("off")
 
 vim.opt.softtabstop = 4
