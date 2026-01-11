@@ -7,3 +7,4 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.scrolloff = 10
 vim.diagnostic.config({ virtual_text = true })
+vim.lsp.set_log_level("off")
