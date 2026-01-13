@@ -3,27 +3,21 @@
     "layer": "top",
     "spacing": 5,
     "modules-left": [
-        "sway/workspaces",
-        "sway/mode",
-        "sway/scratchpad",
-        "custom/media"
+        "battery",
+        "cpu",
+        "memory",
+        "temperature",
+        "backlight",
+        "network",
+        "pulseaudio"
     ],
     "modules-center": [
         "clock"
     ],
     "modules-right": [
-        "mpd",
+        "sway/workspaces",
         "idle_inhibitor",
-        "pulseaudio",
-        "network",
         "power-profiles-daemon",
-        "cpu",
-        "memory",
-        "temperature",
-        "backlight",
-        // "keyboard-state",
-        "sway/language",
-        "battery",
         "tray",
         "custom/power"
     ],
