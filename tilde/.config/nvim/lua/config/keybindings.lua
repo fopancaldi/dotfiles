@@ -1,7 +1,9 @@
 vim.keymap.set("n", "<leader>ch", function()
   vim.api.nvim_command("noh")
 end, { desc = "Clear search highlight", noremap = true })
-
+vim.keymap.set("n", "<leader>pp", function()
+  print(vim.api.nvim_buf_get_name(0))
+end, { desc = "Print buffer path", noremap = true })
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal insert mode", noremap = true })
 
 vim.keymap.set("n", "gl", "$", { desc = "Go to line begin", noremap = true })
