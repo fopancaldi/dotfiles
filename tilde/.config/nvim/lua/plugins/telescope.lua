@@ -14,7 +14,9 @@ return {
       {
         "<leader>tg",
         function()
-          require("telescope.builtin").live_grep()
+          require("telescope.builtin").live_grep({
+            --[[ cwd = require("lspconfig.util").root_pattern(".git")(vim.fn.expand("%:p")) ]]
+          })
         end,
         desc = "Telescope live grep",
       },

@@ -11,8 +11,13 @@ vim.keymap.set("n", "gh", "0", { desc = "Go to line end", noremap = true })
 
 vim.keymap.set("n", "<leader>lt", function()
   local current_conf = vim.diagnostic.config()
+  assert(current_conf ~= nil)
   vim.diagnostic.config({
     virtual_text = not current_conf.virtual_text,
     virtual_lines = not current_conf.virtual_lines,
   })
 end, { desc = "Toggle lsp lines", noremap = true })
+
+vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
+vim.keymap.set({ "n" }, "<leader>gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+vim.keymap.set({ "n" }, "<leader>gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
