@@ -28,9 +28,6 @@ return {
       yaml = { "prettier" },
     },
     formatters = {
-      stylua = {
-        prepend_args = { "--indent-type=Spaces", "--indent-width=2" },
-      },
       fprettify = {
         prepend_args = { "--indent=2" },
       },
