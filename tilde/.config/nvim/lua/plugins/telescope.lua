@@ -36,7 +36,7 @@ return {
     opts = {
       defaults = {
         layout_config = {
-          preview_width = 100,
+          preview_width = 120,
         },
       },
       pickers = {
