@@ -96,6 +96,7 @@ return {
   }]]
 
   {
+    enabled = false,
     "mfussenegger/nvim-dap",
     config = function()
       local dap = require("dap")
@@ -162,6 +163,7 @@ return {
     end,
   },
   {
+    enabled = false,
     "rcarriga/nvim-dap-ui",
     dependencies = { { "mfussenegger/nvim-dap" }, "nvim-neotest/nvim-nio" },
     config = function()
