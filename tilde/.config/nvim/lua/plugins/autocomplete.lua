@@ -1,11 +1,15 @@
 return {
   {
     "folke/lazydev.nvim",
-    ft = "lua", -- only load on lua files
+    ft = "lua",
     opts = {},
   },
   {
     "hrsh7th/cmp-nvim-lsp",
+    event = {
+      "BufReadPre",
+      "BufNewFile",
+    },
     opts = {
       sources = {
         { name = "nvim_lsp" },
