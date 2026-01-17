@@ -26,4 +26,5 @@ require("lazy").setup({
       "retrobox",
     },
   },
+  custom_keys = nil,
 })
