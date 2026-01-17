@@ -1,5 +1,10 @@
 return {
   {
+    "folke/lazydev.nvim",
+    ft = "lua", -- only load on lua files
+    opts = {},
+  },
+  {
     "hrsh7th/cmp-nvim-lsp",
     opts = {
       sources = {
