@@ -6,8 +6,6 @@ vim.opt.ignorecase = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.scrolloff = 10
-vim.diagnostic.config({ virtual_text = true, virtual_lines = false })
-vim.lsp.set_log_level("off")
 
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 0
@@ -15,9 +13,9 @@ vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 
-vim.api.nvim_command("colorscheme retrobox")
-
 vim.diagnostic.config({
+  virtual_text = true,
+  virtual_lines = false,
   signs = {
     text = {
       [vim.diagnostic.severity.ERROR] = " ",
@@ -27,3 +25,7 @@ vim.diagnostic.config({
     },
   },
 })
+
+vim.lsp.set_log_level("off")
+
+vim.api.nvim_command("colorscheme retrobox")
