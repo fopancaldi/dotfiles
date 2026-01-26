@@ -6,6 +6,13 @@ vim.keymap.set("n", "<leader>pp", function()
 end, { desc = "Print buffer path", noremap = true })
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal insert mode", noremap = true })
 
+vim.keymap.set("n", "<leader>tn", function()
+  vim.api.nvim_command("tabnew")
+end, { desc = "Open new tab" })
+vim.keymap.set("n", "<leader>tc", function()
+  vim.api.nvim_command("tabclose")
+end, { desc = "Close current tab" })
+
 vim.keymap.set("n", "gl", "$", { desc = "Go to line begin", noremap = true })
 vim.keymap.set("n", "gh", "0", { desc = "Go to line end", noremap = true })
 
@@ -19,5 +26,5 @@ vim.keymap.set("n", "<leader>lt", function()
 end, { desc = "Toggle lsp lines", noremap = true })
 
 vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
-vim.keymap.set({ "n" }, "<leader>gd", vim.lsp.buf.definition, { desc = "Go to definition" })
-vim.keymap.set({ "n" }, "<leader>gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
+vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+vim.keymap.set("n", "<leader>gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
