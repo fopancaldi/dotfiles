@@ -1,5 +1,5 @@
 vim.keymap.set("n", "<leader>ch", function()
-  vim.api.nvim_command("noh")
+  vim.api.nvim_command("nohlsearch")
 end, { desc = "Clear search highlight", noremap = true })
 vim.keymap.set("n", "<leader>pp", function()
   print(vim.api.nvim_buf_get_name(0))
@@ -8,10 +8,13 @@ vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal insert mode"
 
 vim.keymap.set("n", "<leader>tn", function()
   vim.api.nvim_command("tabnew")
-end, { desc = "Open new tab" })
+  require("neo-tree.command").execute({
+    dir = os.getenv("HOME"),
+  })
+end, { desc = "Open home in new tab", noremap = true })
 vim.keymap.set("n", "<leader>tc", function()
   vim.api.nvim_command("tabclose")
-end, { desc = "Close current tab" })
+end, { desc = "Close current tab", noremap = true })
 
 vim.keymap.set("n", "gl", "$", { desc = "Go to line begin", noremap = true })
 vim.keymap.set("n", "gh", "0", { desc = "Go to line end", noremap = true })
