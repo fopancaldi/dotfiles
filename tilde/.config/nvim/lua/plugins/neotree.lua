@@ -8,7 +8,15 @@ return {
     "MunifTanjim/nui.nvim",
   },
   keys = {
-    { "<leader>ft", "<cmd>Neotree toggle<cr>", desc = "Toggle filetree" },
+    {
+      "<leader>ft",
+      function()
+        require("neo-tree.command").execute({
+          toggle = true,
+        })
+      end,
+      desc = "Toggle filetree",
+    },
   },
   opts = {
     filesystem = {
