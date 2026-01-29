@@ -7,5 +7,6 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, {
 })
 vim.api.nvim_create_autocmd({ "BufEnter" }, {
   pattern = { "*.png" },
-  command = "execute \"!swayimg '%'\" | bdelete %",
+  -- TODO: Figure out why wincmd is "necessary" and find a proper command
+  command = "execute \"!swayimg '%'\" | bdelete % | wincmd h",
 })
