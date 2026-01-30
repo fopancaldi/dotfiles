@@ -13,8 +13,6 @@ vim.keymap.set("n", "<leader>tn", function()
     neotree.execute({
       dir = os.getenv("HOME"),
     })
-  else
-    print("shirou")
   end
 end, { desc = "Open home in new tab", noremap = true })
 vim.keymap.set("n", "<leader>tc", function()
