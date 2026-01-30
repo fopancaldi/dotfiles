@@ -8,9 +8,14 @@ vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal insert mode"
 
 vim.keymap.set("n", "<leader>tn", function()
   vim.api.nvim_command("tabnew")
-  require("neo-tree.command").execute({
-    dir = os.getenv("HOME"),
-  })
+  local has_neotree, neotree = pcall(require, "neo-tree.command")
+  if has_neotree then
+    neotree.execute({
+      dir = os.getenv("HOME"),
+    })
+  else
+    print("shirou")
+  end
 end, { desc = "Open home in new tab", noremap = true })
 vim.keymap.set("n", "<leader>tc", function()
   vim.api.nvim_command("tabclose")
