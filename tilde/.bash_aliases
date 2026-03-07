@@ -1,4 +1,3 @@
-alias lsd="lsd --versionsort"
 alias ls="lsd"
 alias la="ls -A"
 alias ll="ls -l"
