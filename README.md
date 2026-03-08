@@ -16,7 +16,7 @@ The scripts require the `bash` shell.
 # Configured programs
 
 - [`flameshot`](https://flameshot.org/): screenshot tool
-- [`foot`](https://codeberg.org/dnkl/foot/) (+[`starship`](https://starship.rs/)): terminal emulator
+- [`foot`](https://codeberg.org/dnkl/foot/) (+[`lsd`](https://github.com/lsd-rs/lsd/), [`starship`](https://starship.rs/)): terminal emulator
 - [`fuzzel`](https://codeberg.org/dnkl/fuzzel/): app launcher
 - [`gammastep`](https://gitlab.com/chinstrap/gammastep/): blue light tool
 - [`greetd`](https://sr.ht/~kennylevinsen/greetd/) (+[`tuigreet`](https://github.com/apognu/tuigreet/)): login manager
