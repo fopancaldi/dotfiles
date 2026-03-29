@@ -13,8 +13,18 @@ The scripts require the `bash` shell.
     scripts/setup.bash
     scripts/setup_su.bash
 
+# Configure Firefox
+
+After running at least `setup_su.bash`:
+
+    cp firefox/{search.json.mozlz4,user.js} <firefox-profile-directory>
+
+where `<firefox-profile-directory>` is the directory of the Firefox profile (usually of the form `~/.mozilla/firefox/xxxxxxxx.profile_name`).
+Use `firefox -P` to edit Firefox profiles.
+
 # Configured programs
 
+- [`firefox`](https://www.firefox.com/): internet browser and pdf editor
 - [`flameshot`](https://flameshot.org/): screenshot tool
 - [`foot`](https://codeberg.org/dnkl/foot/) (+[`lsd`](https://github.com/lsd-rs/lsd/), [`starship`](https://starship.rs/)): terminal emulator
 - [`fuzzel`](https://codeberg.org/dnkl/fuzzel/): app launcher
@@ -33,4 +43,6 @@ The scripts require the `bash` shell.
 - [`yazi`](https://yazi-rs.github.io/): file manager
 - [`zathura`](https://pwmt.org/projects/zathura/): pdf reader
 
-TODO: In kanshi, configure each output once (not available on kanshi 1.5)
+# TODO
+
+- In kanshi, configure each output once (not available on kanshi 1.5)

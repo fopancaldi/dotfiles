@@ -7,21 +7,22 @@ shopt -s globstar
 initial_dir="$(pwd | tr -d '\r')"
 cd "${HOME}/dotfiles" || exit $?
 
-for file in etc/**; do
-  [[ ! -f "$file" ]] && continue
-  file="/${file}"
-  dir="$(dirname "$file")/"
+for dir in etc usr; do
+  for file in "$dir"/**; do
+    [[ ! -f "$file" ]] && continue
+    file="/${file}"
+    parent_dir="$(dirname "$file")/"
 
-  echo "Creating $dir"
-  sudo -k mkdir -p "$dir"
+    echo "Creating $parent_dir"
+    sudo -k mkdir -p "$parent_dir"
 
-  echo "Backing up $file"
-  sudo -k scripts/common/smart_mv_bak.bash "$file"
+    echo "Backing up $file"
+    sudo -k scripts/common/smart_mv_bak.bash "$file"
+  done
+  echo "Stowing $dir to /$dir"
+  sudo -k stow --target "/$dir" "$dir"
 done
-unset -v file dir
-
-echo "Stowing etc to /etc"
-sudo -k stow --target /etc etc
+unset -v file parent_dir dir
 
 cd "$initial_dir" || exit $?
 exit

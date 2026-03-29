@@ -1,0 +1,17 @@
+user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-fixed-list\":[],\"unified-extensions-area\":[\"ublock0_raymondhill_net-browser-action\",\"jid1-mnnxcxisbpnsxq_jetpack-browser-action\",\"_54e2eb33-18eb-46ad-a4e4-1329c29f6e17_-browser-action\",\"canvasblocker_kkapsner_de-browser-action\",\"_74145f27-f039-47ce-a470-a662b129930a_-browser-action\"],\"nav-bar\":[\"sidebar-button\",\"back-button\",\"forward-button\",\"stop-reload-button\",\"customizableui-special-spring2\",\"urlbar-container\",\"vertical-spacer\",\"customizableui-special-spring4\",\"addon_darkreader_org-browser-action\",\"_testpilot-containers-browser-action\",\"unified-extensions-button\",\"bookmarks-menu-button\"],\"toolbar-menubar\":[\"menubar-items\"],\"TabsToolbar\":[],\"vertical-tabs\":[\"tabbrowser-tabs\"],\"PersonalToolbar\":[\"import-button\",\"personal-bookmarks\"]},\"seen\":[],\"dirtyAreaCache\":[\"nav-bar\",\"TabsToolbar\",\"vertical-tabs\",\"PersonalToolbar\",\"unified-extensions-area\",\"toolbar-menubar\"],\"currentVersion\":22,\"newElementCount\":9}");
+user_pref("browser.urlbar.autoFill", false);
+user_pref("browser.urlbar.placeholderName", "Ecosia");
+user_pref("browser.urlbar.placeholderName.private", "Ecosia");
+user_pref("browser.urlbar.suggest.bookmark", false);
+user_pref("browser.urlbar.suggest.engines", false);
+user_pref("browser.urlbar.suggest.history", false);
+user_pref("browser.urlbar.suggest.openpage", false);
+user_pref("browser.urlbar.suggest.quickactions", false);
+user_pref("browser.urlbar.suggest.recentsearches", false);
+user_pref("browser.urlbar.suggest.topsites", false);
+user_pref("places.history.enabled", false);
+user_pref("privacy.history.custom", true);
+user_pref("sidebar.backupState", "{\"command\":\"\",\"panelOpen\":false,\"launcherWidth\":1,\"launcherExpanded\":false,\"launcherVisible\":true}");
+user_pref("sidebar.main.tools", "bookmarks");
+user_pref("sidebar.revamp", true);
+user_pref("sidebar.verticalTabs", true);
