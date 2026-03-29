@@ -13,7 +13,7 @@ The scripts require the `bash` shell.
     scripts/setup.bash
     scripts/setup_su.bash
 
-# Configure Firefox
+## Configure Firefox
 
 After running at least `setup_su.bash`:
 
