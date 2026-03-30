@@ -17,7 +17,7 @@ The scripts require the `bash` shell.
 
 After running at least `setup_su.bash`:
 
-    cp firefox/{search.json.mozlz4,user.js} <firefox-profile-directory>
+    cp firefox/* <firefox-profile-directory>
 
 where `<firefox-profile-directory>` is the directory of the Firefox profile (usually of the form `~/.mozilla/firefox/xxxxxxxx.profile_name`).
 Use `firefox -P` to edit Firefox profiles.
