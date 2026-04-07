@@ -45,4 +45,5 @@ Use `firefox -P` to edit Firefox profiles.
 
 # TODO
 
-- In kanshi, configure each output once (not available on kanshi 1.5)
+- kanshi: configure each output once (>= 1.5)
+- swayimg: use a .lua config file (>= 5.0)
