@@ -1,5 +1,28 @@
 {
   "policies": {
+    "AIControls": {
+      "Default": {
+        "Value": "blocked"
+      },
+      "Translations": {
+        "Value": "blocked"
+      },
+      "PDFAltText": {
+        "Value": "blocked"
+      },
+      "SmartTabGroups": {
+        "Value": "blocked"
+      },
+      "LinkPreviewKeyPoints": {
+        "Value": "blocked"
+      },
+      "SidebarChatbot": {
+        "Value": "blocked"
+      },
+      "SmartWindow": {
+        "Value": "blocked"
+      }
+    },
     "AutofillddressEnabled": false,
     "AutofillCreditCardEnabled": false,
     "CaptivePortal": false,
