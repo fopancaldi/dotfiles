@@ -1,5 +1,7 @@
 My dotfiles.
 
+Tested on Arch (read: I use Arch btw).
+
 # Prerequisites
 
 Requires [`stow`](https://www.gnu.org/software/stow/).
@@ -13,17 +15,21 @@ The scripts require the `bash` shell.
     scripts/setup.bash
     scripts/setup_su.bash
 
-## Configure Firefox
+## Configure Firefox, Thunderbird
 
-After running at least `setup_su.bash`:
+After running at least `setup_su.bash` (in order to stow the various `policies.json`):
 
     cp firefox/* <firefox-profile-directory>
+    cp betterbird/* <betterbird-profile-directory>
 
-where `<firefox-profile-directory>` is the directory of the Firefox profile (usually of the form `~/.mozilla/firefox/xxxxxxxx.profile_name`).
-Use `firefox -P` to edit Firefox profiles.
+where `<firefox-profile-directory>` is the directory of the Firefox profile (usually of the form `~/.mozilla/firefox/xxxxxxxx.profile_name` or `~/.config/mozilla/firefox/xxxxxxxx.profile_name`).
+Betterbird is analogous, except that the directory should be `~/.thunderbird/xxxxxxxx.profile_name`.
+
+Use `firefox -P`, `betterbird -P` to edit the profiles.
 
 # Configured programs
 
+- [`betterbird`](https://www.betterbird.eu/): email client
 - [`firefox`](https://www.firefox.com/): internet browser and pdf editor
 - [`flameshot`](https://flameshot.org/): screenshot tool
 - [`foot`](https://codeberg.org/dnkl/foot/) (+[`lsd`](https://github.com/lsd-rs/lsd/), [`starship`](https://starship.rs/)): terminal emulator
@@ -47,3 +53,4 @@ Use `firefox -P` to edit Firefox profiles.
 
 - kanshi: configure each output once (>= 1.5)
 - swayimg: use a .lua config file (>= 5.0)
+- mpv: configure ncmpcpp (?)
