@@ -1,0 +1,8 @@
+-- swayimg.imagelist.set_order("numeric")
+swayimg.text.set_font("Agave Nerd Font")
+-- swayimg.viewer.set_default_scale("fit")
+swayimg.viewer.set_text("topleft", { "{name}" })
+swayimg.viewer.set_text("topright", { "{list.index} of {list.total}" })
+swayimg.viewer.set_text("bottomleft", { "{scale}" })
+-- swayimg.viewer.set_window_background(0x000000ff)
+-- swayimg.viewer.set_window_background(0xff000000)
