@@ -54,3 +54,4 @@ Use `firefox -P`, `betterbird -P` to edit the profiles.
 - kanshi: configure each output once (>= 1.5)
 - swayimg: use a .lua config file (>= 5.0)
 - mpv: configure ncmpcpp (?)
+- format all config files (e.g. `waybar/config.jsonc` currently contains a mixture of tabs & spaces)
