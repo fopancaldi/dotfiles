@@ -7,7 +7,7 @@ shopt -s globstar
 initial_dir="$(pwd | tr -d '\r')"
 cd "${HOME}/dotfiles" || exit $?
 
-for dir in etc usr; do
+for dir in etc opt usr; do
   for file in "$dir"/**; do
     [[ ! -f "$file" ]] && continue
     file="/${file}"

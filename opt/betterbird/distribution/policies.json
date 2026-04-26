@@ -1,0 +1,23 @@
+{
+  "policies": {
+    "Cookies": {
+      "minimizeonclose@rsjtdrjgfuzkfg.com": "reject-foreign"
+    },
+    "DisableTelemetry": true,
+    "ExtensionSettings": {
+      "minimizeonclose@rsjtdrjgfuzkfg.com": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.thunderbird.net/thunderbird/downloads/latest/minimize-on-close/latest.xpi"
+      }
+    },
+    "ManualAppUpdateOnly": true,
+    "OfferToSaveLogins": false,
+    "SearchEngines": {
+      "Default": "Ecosia",
+      "Remove": [
+        "Bing",
+        "Google"
+      ]
+    }
+  }
+}
