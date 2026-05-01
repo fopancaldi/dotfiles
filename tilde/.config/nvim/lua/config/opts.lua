@@ -27,6 +27,6 @@ vim.diagnostic.config({
   },
 })
 
-vim.lsp.set_log_level("off")
+vim.lsp.log.set_level("off")
 
 vim.api.nvim_command("colorscheme retrobox")
