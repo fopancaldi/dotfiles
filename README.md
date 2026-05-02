@@ -30,6 +30,7 @@ Use `firefox -P`, `betterbird -P` to edit the profiles.
 # Configured programs
 
 - [`betterbird`](https://www.betterbird.eu/): email client
+- [`dunst`](https://dunst-project.org/): notification daemon
 - [`firefox`](https://www.firefox.com/): internet browser and pdf editor
 - [`flameshot`](https://flameshot.org/): screenshot tool
 - [`foot`](https://codeberg.org/dnkl/foot/) (+[`lsd`](https://github.com/lsd-rs/lsd/), [`starship`](https://starship.rs/)): terminal emulator
