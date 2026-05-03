@@ -1,0 +1,11 @@
+[Unit]
+Description=Idle management daemon for Wayland compositors
+Documentation=man:swayidle(1)
+BindsTo=sway-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/swayidle -w
+
+[Install]
+WantedBy=sway-session.target

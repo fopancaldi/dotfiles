@@ -1,0 +1,11 @@
+[Unit]
+Description=Redshift daemon for Wayland compositors
+Documentation=man:gammastep(1)
+BindsTo=sway-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/gammastep
+
+[Install]
+WantedBy=sway-session.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=Better Thunderbird email client
+#Documentation=
+BindsTo=sway-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/betterbird
+Environment="XDG_CURRENT_DESKTOP=sway"
+
+[Install]
+WantedBy=sway-session.target

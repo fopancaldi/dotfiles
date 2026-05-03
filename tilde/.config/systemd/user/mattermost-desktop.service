@@ -1,0 +1,11 @@
+[Unit]
+Description=Open source Slack-alternative
+#Documentation=
+BindsTo=sway-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/mattermost-desktop
+
+[Install]
+WantedBy=sway-session.target

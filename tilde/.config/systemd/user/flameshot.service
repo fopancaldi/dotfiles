@@ -1,0 +1,11 @@
+[Unit]
+Description=Screenshot tool for Wayland compositors
+Documentation=man:flameshot(1)
+BindsTo=sway-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/flameshot
+
+[Install]
+WantedBy=sway-session.target
