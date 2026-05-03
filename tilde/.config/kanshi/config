@@ -1,17 +1,41 @@
-profile alone {
-	output "AU Optronics 0x103D Unknown" mode 1920x1080 position 0,0
+output "AU Optronics 0x103D Unknown" {
+  mode 1920x1080
+  position 0,0
+  alias $INTERNAL_T480S
 }
 
-profile cnaf {
-	output "HannStar Display Corp HP247DJB 1234567890123" mode 1920x1080 position 0,-1080
-	output "AU Optronics 0x103D Unknown" mode 1920x1080 position 0,0
+output "Samsung Electric Company SyncMaster HMBZ501040" {
+  mode 2048x1152
+  position -64,-1152
+  alias $IRNERIO
+}
+
+output "HannStar Display Corp HP247DJB 1234567890123" {
+  mode 1920x1080
+  position 0,-1080
+  alias $CNAF
+}
+
+output "cPATH 0x14C7 Unknown" {
+  mode 1366x768
+  position 0,0
+  alias $INTERNAL_G6
+}
+
+profile single_t480s {
+    output $INTERNAL_T480S enable
 }
 
 profile irnerio {
-	output "Samsung Electric Company SyncMaster HMBZ501040" mode 2048x1152 position 0,-1152
-	output "AU Optronics 0x103D Unknown" mode 1920x1080 position 0,0
+    output $INTERNAL_T480S enable
+    output $IRNERIO enable
 }
 
-profile old {
-	output "cPATH 0x14C7 Unknown" mode 1366x768 position 0,0
+profile cnaf {
+    output $INTERNAL_T480S enable
+    output $CNAF enable
+}
+
+profile single_g6 {
+    output $INTERNAL_G6 enable
 }
