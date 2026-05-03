@@ -1,0 +1,11 @@
+[Unit]
+Description=TODO
+#Documentation=
+BindsTo=sway-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/nm-applet
+
+[Install]
+WantedBy=sway-session.target
