@@ -1,9 +1,9 @@
 set $mod Mod4
 
 set $term foot
-set $menu fuzzel
+set $launcher fuzzel
 set $editor nvim
-set $fmanager yazi
+set $explorer yazi
 set $ibrowser firefox
 
 include /etc/sway/config-vars.d/*
