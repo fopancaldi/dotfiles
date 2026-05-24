@@ -4,7 +4,8 @@ set $term foot
 set $launcher fuzzel
 set $editor nvim
 set $explorer yazi
-set $ibrowser firefox
+set $browser firefox
+set $monitor btop
 
 include /etc/sway/config-vars.d/*
 include ${HOME}/.config/sway/config.d/*
