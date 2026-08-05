@@ -1,8 +1,0 @@
-swayimg.text.set_font("Agave Nerd Font")
-swayimg.viewer.on_key("q", function()
-  swayimg.exit()
-end)
-swayimg.viewer.set_default_scale("fit")
-swayimg.viewer.set_text("topleft", { "{name}" })
-swayimg.viewer.set_text("topright", { "{list.index} of {list.total}" })
-swayimg.viewer.set_text("bottomleft", { "{scale}" })
