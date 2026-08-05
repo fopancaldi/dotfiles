@@ -1,9 +1,9 @@
 [Default Applications]
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop;
 
-image/jpg=swayimg.desktop;
-image/jpeg=swayimg.desktop;
-image/png=swayimg.desktop;
+image/jpg=imv.desktop;
+image/jpeg=imv.desktop;
+image/png=imv.desktop;
 
 image/gif=mpv.desktop;
 
