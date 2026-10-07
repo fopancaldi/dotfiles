@@ -1,3 +1,15 @@
-set font "Agave Nerd Font 10"
 set adjust-open "best-fit"
-set selection-clipboard clipboard
+set database "null"
+#set double-click-follow false
+set font "Agave Nerd Font 10"
+set guioptions ""
+set recolor-keephue true
+set recolor-reverse-video true
+set selection-clipboard "clipboard"
+set show-recent 0
+set statusbar-home-tilde true
+
+unmap <C-r>
+map <C-r> set recolor
+unmap <C-s>
+map <C-s> toggle_statusbar
