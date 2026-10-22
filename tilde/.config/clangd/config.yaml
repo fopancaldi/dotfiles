@@ -1,10 +1,10 @@
 If:
-  PathMatch: [".*\\.hpp$", ".*\\.cpp$"]
+  PathMatch: [".*\\.hpp$", ".*\\.cpp$", ".*\\.h$"]
 CompileFlags:
-  Add: "--std=c++20"
+  Add: ["--std=c++20", "-DALPAKA_ACC_CPU_B_SEQ_T_SEQ_ENABLED"]
 
 ---
 If:
-  PathMatch: [".*\\.h$", ".*\\.c$"]
+  PathMatch: [".*\\.c$"]
 CompileFlags:
   Add: "--std=c17"
