@@ -27,29 +27,6 @@ Betterbird is analogous, except that the directory should be `~/.thunderbird/xxx
 
 Use `firefox -P`, `betterbird -P` to edit the profiles.
 
-# Configured programs
-
-- [`betterbird`](https://www.betterbird.eu/): email client
-- [`dunst`](https://dunst-project.org/): notification daemon
-- [`firefox`](https://www.firefox.com/): internet browser and pdf editor
-- [`flameshot`](https://flameshot.org/): screenshot tool
-- [`foot`](https://codeberg.org/dnkl/foot/) (+[`lsd`](https://github.com/lsd-rs/lsd/), [`starship`](https://starship.rs/)): terminal emulator
-- [`fuzzel`](https://codeberg.org/dnkl/fuzzel/): app launcher
-- [`gammastep`](https://gitlab.com/chinstrap/gammastep/): blue light tool
-- [`greetd`](https://sr.ht/~kennylevinsen/greetd/) (+[`tuigreet`](https://github.com/apognu/tuigreet/)): login manager
-- [`kanshi`](https://gitlab.freedesktop.org/emersion/kanshi/): screen placement tool
-- [`keyd`](https://github.com/rvaiya/keyd/): key remapping tool
-- [`helix`](https://helix-editor.com/): text editor
-- [`mpd`](https://www.musicpd.org/) (+ TODO): music player
-- [`mpv`](https://mpv.io/): video player
-- [`neovim`](https://neovim.io/): text editor
-- [`sioyek`](https://sioyek.info/): pdf reader
-- [`sway`](https://swaywm.org/) (+[`swayidle`](https://github.com/swaywm/swayidle/), [`swaylock`](https://github.com/swaywm/swaylock/), [`waybar`](https://waybar.org/)): window manager
-- [`swayimg`](https://github.com/artemsen/swayimg/): image viewer
-- [`tealdeer`](https://tealdeer-rs.github.io/tealdeer/): shorter man
-- [`yazi`](https://yazi-rs.github.io/): file manager
-- [`zathura`](https://pwmt.org/projects/zathura/): pdf reader
-
 # TODO
 
 - mpv: configure ncmpcpp (?)
