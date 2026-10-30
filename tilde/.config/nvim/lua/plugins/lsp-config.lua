@@ -20,7 +20,6 @@ return {
         "clangd",
         "fortls",
         "lua_ls",
-        "matlab_ls",
         "marksman",
         "texlab",
         "lemminx",
@@ -66,9 +65,6 @@ return {
         -- "lua-language-server",
         "luacheck",
         "stylua",
-        -- Matlab
-        "matlab-language-server",
-        "miss_hit",
         -- Markdown
         -- "marksman",
         "alex",

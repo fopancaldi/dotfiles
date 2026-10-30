@@ -23,7 +23,6 @@ return {
       fortran = { "fprettify" },
       haskell = { "ormolu" },
       lua = { "stylua" },
-      matlab = { "mh_style" },
       markdown = { "prettier" },
       python = { "ruff" },
       rust = { "rustfmt" },

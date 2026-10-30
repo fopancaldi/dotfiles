@@ -19,7 +19,6 @@ return {
       --TODO: cuda
       haskell = { "hlint" },
       lua = { "luacheck" },
-      matlab = { "mh_lint" },
       -- markdown = { "alex" },
       -- rust = { "clippy" },
       -- tex = { "vale" },
