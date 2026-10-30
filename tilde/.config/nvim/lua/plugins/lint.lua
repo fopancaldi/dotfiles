@@ -1,5 +1,6 @@
 return {
   "mfussenegger/nvim-lint",
+  event = { "BufReadPre", "BufNewFile" },
   keys = {
     {
       "<leader>lf",
@@ -12,15 +13,17 @@ return {
   config = function()
     local lint = require("lint")
     lint.linters_by_ft = {
-      bash = { "shellcheck" },
-      cmake = { "cmake_lint" },
-      --cpp = { "cpplint" },
+      -- bash = { "shellcheck" },
+      -- cmake = { "cmake_lint" },
+      -- cpp = { "clangtidy" },
       --TODO: cuda
+      haskell = { "hlint" },
       lua = { "luacheck" },
-      markdown = { "alex" },
-      rust = { "clippy" },
-      tex = { "vale" },
-      yaml = { "yamllint" },
+      matlab = { "mh_lint" },
+      -- markdown = { "alex" },
+      -- rust = { "clippy" },
+      -- tex = { "vale" },
+      -- yaml = { "yamllint" },
     }
 
     vim.api.nvim_create_autocmd({ "BufWritePost" }, {

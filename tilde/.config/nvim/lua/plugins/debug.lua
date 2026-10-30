@@ -112,7 +112,11 @@ return {
           type = "gdb",
           request = "launch",
           program = function()
-            return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+            return vim.fn.input(
+              "Path to executable: ",
+              vim.fn.getcwd() .. "/",
+              "file"
+            )
           end,
           cwd = "${workspaceFolder}",
           stopAtBeginningOfMainSubprogram = false,
@@ -138,7 +142,11 @@ return {
         require("dap").set_breakpoint()
       end, { desc = "Set breakpoint" })
       vim.keymap.set("n", "<Leader>ds", function()
-        require("dap").set_breakpoint(nil, nil, vim.fn.input("Log point message: "))
+        require("dap").set_breakpoint(
+          nil,
+          nil,
+          vim.fn.input("Log point message: ")
+        )
       end)
       vim.keymap.set("n", "<Leader>dr", function()
         require("dap").repl.open()

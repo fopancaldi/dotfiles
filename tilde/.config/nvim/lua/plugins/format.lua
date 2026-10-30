@@ -21,10 +21,15 @@ return {
       cpp = { "clang-format" },
       cu = { "clang-format" },
       fortran = { "fprettify" },
+      haskell = { "ormolu" },
       lua = { "stylua" },
+      matlab = { "mh_style" },
       markdown = { "prettier" },
+      python = { "ruff" },
       rust = { "rustfmt" },
+      sh = { "beautysh" },
       -- texlab already handles formatting
+      typst = { "tinymist" },
       yaml = { "prettier" },
     },
     formatters = {

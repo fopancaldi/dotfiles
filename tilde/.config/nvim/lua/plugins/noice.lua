@@ -5,12 +5,14 @@ return {
     "rcarriga/nvim-notify",
   },
   event = "VeryLazy",
-  keys = { {
-    "<leader>nd",
-    "<cmd>NoiceDismiss<CR>",
-    mode = "n",
-    desc = "Dismiss Noice messages",
-  } },
+  keys = {
+    {
+      "<leader>nd",
+      "<cmd>NoiceDismiss<CR>",
+      mode = "n",
+      desc = "Dismiss Noice messages",
+    },
+  },
   opts = {
     -- See https://github.com/folke/noice.nvim/wiki/Configuration-Recipes#use-a-classic-bottom-cmdline-for-search
     cmdline = {

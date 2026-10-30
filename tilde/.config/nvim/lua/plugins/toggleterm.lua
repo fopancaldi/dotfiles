@@ -6,7 +6,8 @@ return {
     {
       "<leader>tt",
       function()
-        local ntpath = require("neo-tree.sources.manager").get_state("filesystem").path
+        local ntpath =
+          require("neo-tree.sources.manager").get_state("filesystem").path
         if ntpath == nil then
           ntpath = os.getenv("HOME")
         end
