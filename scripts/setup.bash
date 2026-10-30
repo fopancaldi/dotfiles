@@ -2,7 +2,7 @@
 
 scripts/common/assert_on_linux.bash
 
-initial_dir="$(pwd | tr -d '\r')"
+initial_dir="$(pwd | tr --delete '\r')"
 cd "$HOME/dotfiles" || exit $?
 
 for file in .bashrc .bash_profile .bash_logout .bash_aliases; do
@@ -10,7 +10,7 @@ for file in .bashrc .bash_profile .bash_logout .bash_aliases; do
 done
 unset -v file
 
-mkdir -p "$HOME/.config" "$HOME/Pictures/Wallpapers" "$HOME/.config/systemd/user"
+mkdir --parents "$HOME/.config" "$HOME/Pictures/Wallpapers" "$HOME/.config/systemd/user"
 stow --target "$HOME" tilde
 
 cd "$initial_dir" || exit $?
