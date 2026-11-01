@@ -16,8 +16,8 @@ return {
     opts = {
       ensure_installed = {
         "bashls",
-        "neocmake",
-        "clangd",
+        -- "neocmake",
+        -- "clangd",
         "fortls",
         "lua_ls",
         "marksman",
@@ -43,12 +43,12 @@ return {
         "shellcheck",
         -- CMake
         -- "neocmakelsp",
-        "cmakelang",
-        "gersemi",
+        -- "cmakelang",
+        -- "gersemi",
         -- C++
         -- "clangd",
-        "cpplint",
-        "clang-format",
+        -- "cpplint",
+        -- "clang-format",
         -- CUDA
         -- clangd already instaled for C++
         -- linter ???
@@ -81,8 +81,8 @@ return {
         "latexindent",
         "bibtex-tidy",
         -- Typst
-        "tinymist",
-        "prettypst",
+        -- "tinymist",
+        -- "prettypst",
         -- TODO: XML
         --"sonarlint-language-server",
         -- "lemminx",
