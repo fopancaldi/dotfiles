@@ -42,7 +42,7 @@ Does not require a special command.
 Ensure that the public key's name has the usual relation with the private key's.
 
 Suggested (private key) naming scheme: `<target_machine>_<source_machine>` .
-Having the encryption algorithm in the name is not necessary since it is already written at the beginnng of the public key.
+Having the encryption algorithm in the name is not necessary since it is already written at the beginning of the public key.
 
 ### Copy a local (public) key into a remote server's `~/.ssh/authorized_keys`
 
