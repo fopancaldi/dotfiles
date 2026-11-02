@@ -12,7 +12,7 @@
 ### Install
 
     sudo apt install openssh # Debian
-    pacman -S openssh # Arch
+    sudo pacman -S openssh # Arch
 
 ### Import/export a key pair
 
