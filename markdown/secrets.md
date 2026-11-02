@@ -2,10 +2,10 @@
 
 ## Table of contents
 
-- [ssh](#ssh)
-- [gpg](#gpg)
-- [pass](#pass)
-- [cryptsetup](#cryptsetup)
+- [`ssh`](#ssh)
+- [`gpg`](#gpg)
+- [`pass`](#pass)
+- [`cryptsetup`](#cryptsetup)
 
 ## ssh
 
@@ -117,7 +117,7 @@ Run only the second command if the password is already known.
     sudo apt install cryptsetup # Debian
     sudo pacman -S cryptsetup # Arch
 
-All of the following commands require superuser privileges, so `sudo su` may save some typing.
+All of the following commands require superuser privileges, so `sudo -i` may save some typing.
 
 ### Open and mount an encrypted partition
 
