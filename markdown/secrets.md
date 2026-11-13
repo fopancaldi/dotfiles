@@ -13,6 +13,7 @@
 
     sudo apt install openssh # Debian
     sudo pacman -S openssh # Arch
+    services.openssh.enable = true # NixOS, in configuration.nix
 
 ### Import/export a key pair
 
@@ -23,11 +24,19 @@ Ensure that the private key has no extension and the public key's file name is `
 
     ssh-keygen -t ed25519 -a 100 -f ~/.ssh/<key_name> -C <key_comment>
 
+See [here](#rename-a-key-pair) for a suggested naming scheme, and [here](#change-the-comment-of-a-key-pair) for a suggested comment scheme.
+
 ### Change a (private) key's passphrase
 
     ssh-keygen -p -f <private_key>
 
-### Change a key pair's comment
+### Confirm a (private) key's passphrase
+
+    ssh-keygen -y -f <private_key>
+
+If the passphrase is correct, the expected contents of the corresponding public key will be printed.
+
+### Change the comment of a key pair
 
 Editing the comment of the public key via a text editor will not alter the private key.
 The following command will work even if the the key pair's comments do not match.
@@ -54,6 +63,7 @@ Having the encryption algorithm in the name is not necessary since it is already
 
     sudo apt install gnupg2 # Debian
     sudo pacman -S gnupg # Arch
+    TODO # NixOS, in configuration.nix
 
 ### Import a key pair
 
@@ -76,6 +86,7 @@ Having the encryption algorithm in the name is not necessary since it is already
 
     sudo apt install pass pass-otp git zbar # Debian
     sudo pacman -S pass pass-otp git zbar # Arch
+    TODO # NixOS, in configuration.nix
 
 `git` is needed to back up the password store.
 `zbar` is needed to extract the link from the QR code usually provided for OTP generation.
@@ -102,9 +113,9 @@ Run only the second command if the password is already known.
 
     pass <file_name_without_.gpg>
 
-### Add an OTP generator from a QR code
+### Add an OTP generator from a QR code saved as an image
 
-    zbarimg -q | pass otp insert <file_name_without_.gpg>
+    zbarimg -q <image_with_qr_code> | pass otp insert <file_name_without_.gpg>
 
 ### Get an OTP code
 
@@ -116,6 +127,7 @@ Run only the second command if the password is already known.
 
     sudo apt install cryptsetup # Debian
     sudo pacman -S cryptsetup # Arch
+    TODO # NixOS, in configuration.nix
 
 All of the following commands require superuser privileges, so `sudo -i` may save some typing.
 
@@ -139,7 +151,7 @@ Use `lsblk` to know which device file (of the form `/dev/xxx`) to target and `fd
 
     cryptsetup luksFormat /dev/<partition_file>
     # Open and mount the encrypted partition
-    mkfs.ext4 /dev/mapper/<partition_identifier>
+    mkfs.ext4 -L <label> /dev/mapper/<partition_identifier>
     # Optionally close and unmount the partition
 
 Notice that a **partition** file must be used here.
