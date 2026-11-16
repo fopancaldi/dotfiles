@@ -1,0 +1,13 @@
+[Unit]
+Description=Redshift daemon indicator for Wayland compositors
+Documentation=man:gammastep(1)
+Requires=gammastep.service
+After=gammastep.service
+PartOf=gammastep.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/gammastep-indicator
+
+[Install]
+WantedBy=sway-session.target
