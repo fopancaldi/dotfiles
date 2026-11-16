@@ -25,7 +25,7 @@ return {
       lua = { "stylua" },
       markdown = { "prettier" },
       nix = { "alejandra" },
-      python = { "ruff" },
+      py = { "ruff" },
       rust = { "rustfmt" },
       sh = { "beautysh" },
       -- texlab already handles formatting
