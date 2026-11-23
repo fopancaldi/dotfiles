@@ -3,6 +3,7 @@
 shopt -s checkwinsize
 
 export EDITOR="nvim"
+export MANPAGER="nvim +Man!"
 # TODO: Remove .local/bin/ and .cargo/bin/ after moving to arch
 export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.ghcup/bin:$HOME/matlab/bin${PATH+:$PATH}"
 
