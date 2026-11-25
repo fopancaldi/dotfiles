@@ -68,7 +68,7 @@
       "paused": " ",
       "playing": " "
     },
-    "tooltip-format": "<span size=\"large\">{title}</span>\n{artist}\n{album}\n{elapsedTime:%M:%S}/{totalTime:%M:%S}",
+    "tooltip-format": "<span size=\"x-large\">{title}</span>\n{artist}\n{album}\n{elapsedTime:%M:%S}/{totalTime:%M:%S}",
     "tooltip-format-disconnected": "MPD (disconnected)"
   },
   "idle_inhibitor": {
