@@ -6,6 +6,7 @@ set $editor nvim
 set $explorer yazi
 set $browser firefox
 set $monitor btop
+set $player rmpc
 
 include /etc/sway/config-vars.d/*
 include ${HOME}/.config/sway/config.d/*
